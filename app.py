@@ -2,6 +2,11 @@ import gradio as gr
 import cv2
 from PIL import Image
 
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'real-esrgan'))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'codeformer'))
+
 from infer import infer_image
 from face_infer import infer_face_auto, infer_face_codeformer_selective, ensure_codeformer_ready, infer_face_manual
 
