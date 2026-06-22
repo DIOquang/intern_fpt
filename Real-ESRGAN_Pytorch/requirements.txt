@@ -1,0 +1,37 @@
+# Core dependencies
+gradio==4.44.1
+gradio-client==1.3.0
+gradio-image-prompter==0.1.0
+
+# PyTorch (CPU version - Lightning will install GPU version via setup.sh)
+torch
+torchvision
+
+# Image processing
+numpy
+opencv-python-headless
+Pillow
+scikit-image
+
+# Model dependencies
+facexlib
+basicsr
+realesrgan
+gfpgan
+
+# Utilities
+huggingface_hub
+requests
+tqdm
+pyyaml
+scipy
+addict
+future
+lmdb
+setuptools
+ffmpeg-python
+psutil
+
+# Web
+fastapi<0.113.0
+starlette<0.38.0

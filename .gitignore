@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+flagged/
+weights/
+.DS_Store
+*.pth
+*.pt
+third_party/
+basicsr-1.4.2/
+basicsr.tar.gz
