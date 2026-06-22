@@ -1,10 +1,49 @@
-.venv/
+# Python
 __pycache__/
-flagged/
-weights/
-.DS_Store
-*.pth
-*.pt
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Weights (too large for git - download separately)
+weights/*.pth
+weights/*.pt
+weights/facelib/
+weights/CodeFormer/
+
+# Third party repos (cloned at runtime)
 third_party/
-basicsr-1.4.2/
+
+# Gradio temp files
+.gradio/
+gradio_cached_examples/
+flagged/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# Build artifacts
 basicsr.tar.gz
+basicsr-1.4.2/build/
+
+# Test
+sample.jpg
+test_ui.py
+config.json
